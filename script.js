@@ -39,9 +39,11 @@ let media = (nota1 + nota2 + nota3)/3;
 alert("Média: " + media);
 */
 // 07
+/*
 let largura = Number(prompt("Digite a largura da parede"));
 let altura = Number(prompt("Digite a altura da parede"));
 
 let litros_tinta = largura * altura / 2;
 
 alert("São necessários " + litros_tinta + " litros de tinta para pintar a parede.");
+*/
