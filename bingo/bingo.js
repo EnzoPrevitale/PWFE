@@ -1,15 +1,13 @@
 let sorteados = [];
+
 let num_atual;
 let btn = document.getElementById("sortear");
-let lista = document.getElementById("lista");
-listaHTML = ""
-letras = {
-    B: [1, 15],
-    I: [16, 30],
-    N: [31, 45],
-    G: [46, 60],
-    O: [61, 75]
-}
+let listaB = document.getElementById("listaB");
+let listaI = document.getElementById("listaI");
+let listaN = document.getElementById("listaN");
+let listaG = document.getElementById("listaG");
+let listaO = document.getElementById("listaO");
+let num = document.getElementById("num");
 
 function random(n) {
     return Math.floor(Math.random() * n) + 1;
@@ -22,14 +20,11 @@ function sortear() {
     
     sorteados.push(num_atual);
     sorteados.sort();
-    for(let i in letras) {
-        if(letras[i][0] <= num_atual <= letras[i][1]) {
-            console.log(letras[i]);
-        } 
-    }
-    lista.innerHTML += "<li>" + num_atual + "</li>";
+    
+    let quadrado = document.getElementById(num_atual);
+    quadrado.style.backgroundColor = "green";
+
+    num.innerHTML = "<p>" + num_atual + "</p>";
 }
-
-
 
 btn.addEventListener("click", sortear);

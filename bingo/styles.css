@@ -1,0 +1,42 @@
+* {
+    font-family: lato, arial;
+}
+
+body {
+    background-color: #660000;
+    color: white;
+    text-align: center;
+}
+
+#num {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px auto;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: black;
+        align-content: center;
+    }
+}
+
+table {
+    margin: 0 auto;
+    border: 2px solid white;
+    border-collapse: collapse;
+
+    td {
+        border: 1px solid white;
+        width: 100px;
+    }
+
+    tr {
+        vertical-align: top;
+    }
+}
+

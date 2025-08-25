@@ -1,9 +1,0 @@
-*{
-    font-family: arial;
-}
-
-#lista {
-    display: flex;
-    flex-direction: column;
-    
-}
